@@ -16,21 +16,13 @@ void prints()
 int getStockInput(stockMarket *replace)
 {
   printf("Enter stock name: ");
-  fgets(replace->stockName, sizeof(replace->stockName), stdin);
-  replace->stockName[strcspn(replace->stockName, "\n")] = '\0';
-  
+  scanf("%29s", replace->stockName);
   printf("Enter stock symbol: ");
-  fgets(replace->stockSymbol, sizeof(replace->stockSymbol), stdin);
-  replace->stockSymbol[strcspn(replace->stockSymbol, "\n")] = '\0';
-  
+  scanf("%9s", replace->stockSymbol);
   printf("Enter date: ");
-  fgets(replace->date, sizeof(replace->date), stdin);
-  replace->date[strcspn(replace->date, "\n")] = '\0';
-  
-  printf("Enter time: ");
-  fgets(replace->timeStamp, sizeof(replace->timeStamp), stdin);
-  replace->timeStamp[strcspn(replace->timeStamp, "\n")] = '\0';
-  
+  scanf("%39s", replace->date);
+  printf("Enter Time: ");
+  scanf("%8s", replace->timeStamp);
   printf("Enter present price: ");
   scanf("%lf", &replace->price);
   return 0;
