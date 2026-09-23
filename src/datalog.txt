@@ -1,0 +1,12 @@
+Stock name: Alphabet
+Stock symbol: GOOGL
+Date: 14-09-2007
+Time: 14:13:12
+Price: 213.00
+
+Stock name: Apple_Inc
+Stock symbol: AAPL
+Date: 12-03-1990
+Time: 11:29:45
+Price: 312.75
+
