@@ -1,5 +1,7 @@
 #include "../library/datal.h"
 #include <stdio.h>
+#include <string.h>
+
 
 void prints()
 {
@@ -15,10 +17,20 @@ int getStockInput(stockMarket *replace)
 {
   printf("Enter stock name: ");
   fgets(replace->stockName, sizeof(replace->stockName), stdin);
+  replace->stockName[strcspn(replace->stockName, "\n")] = '\0';
+  if (strlen(replace->stockName) == 0)
+  {
+    printf("Name cannot be empty\n");
+  }
   printf("Enter stock symbol: ");
   scanf("%9s", replace->stockSymbol);
   printf("Enter date: ");
-  fgets(replace->date, sizeof(replace->date), stdin);
+  fgets(replace->date, sizeof(replace->stockName), stdin);
+  replace->date[strcspn(replace->date, "\n")] = '\0';
+  if (strlen(replace->date) == 0)
+  {
+    printf("Name cannot be empty\n");
+  }
   printf("Enter Time: ");
   scanf("%8s", replace->timeStamp);
   printf("Enter present price: ");
