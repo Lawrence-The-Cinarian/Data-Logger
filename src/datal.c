@@ -9,7 +9,7 @@ void prints()
   puts("(2) Write stock to file");
   puts("(3) Read stock from file");
   puts("(4) Exit");
-  puts("")
+  puts("");
 }
 int getStockInput(stockMarket *replace)
 {
