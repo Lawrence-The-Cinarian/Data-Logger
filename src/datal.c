@@ -53,7 +53,7 @@ int readAndPrintStock(stockMarket *replace)
   
   while(fscanf(outputinfo, "%29s %9s %39s %8s %lf", replace->stockName, replace->stockSymbol, replace->date, replace->timeStamp, &replace->price) == 5)
   {
-  printf(outputinfo, "Stock name: %s\nStock symbol: %s\nDate: %s\nTime: %s\nPrice: %.2f\n\n", replace->stockName, replace->stockSymbol, replace->date, replace->timeStamp, replace->price);
+  printf("Stock name: %s\nStock symbol: %s\nDate: %s\nTime: %s\nPrice: %.2f\n\n", replace->stockName, replace->stockSymbol, replace->date, replace->timeStamp, replace->price);
   }
   fclose(outputinfo);
   return 0;
