@@ -9,7 +9,7 @@ git clone https://github.com/Lawrence-The-Cinarian/Data-Logger
 ```
 
 ```
-cd Data-Logger
+cd Data-Logger/src
 ```
 
 Run it by entering 
