@@ -24,5 +24,6 @@ gcc {main,datal}.c -main
 ```
 
 A simple project built by me.
+
 Note: I'll be constantly updating this file as far as it exists.
 
