@@ -9,6 +9,7 @@ int main(void)
 stockMarket stock;
 int options;
 char symbol = '\0';
+char symbol1 = '\0';
 do{
 
 prints();
@@ -23,7 +24,7 @@ switch(options)
     puts("");
     getStockInput(&stock);
     printf("Do you want to add another stock? Y[es]/N[o]: ");
-    if(!(symbol == 'Y' || symbol == 'y'))
+    if(!(symbol1 == 'Y' || symbol1 == 'y'))
     {
     break;
     }
