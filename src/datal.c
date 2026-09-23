@@ -16,21 +16,11 @@ void prints()
 int getStockInput(stockMarket *replace)
 {
   printf("Enter stock name: ");
-  fgets(replace->stockName, sizeof(replace->stockName), stdin);
-  replace->stockName[strcspn(replace->stockName, "\n")] = '\0';
-  if (strlen(replace->stockName) == 0)
-  {
-    printf("Name cannot be empty\n");
-  }
+  scanf("%29s", replace->stockName);
   printf("Enter stock symbol: ");
   scanf("%9s", replace->stockSymbol);
   printf("Enter date: ");
-  fgets(replace->date, sizeof(replace->stockName), stdin);
-  replace->date[strcspn(replace->date, "\n")] = '\0';
-  if (strlen(replace->date) == 0)
-  {
-    printf("Name cannot be empty\n");
-  }
+  scanf("%39s", replace->date);
   printf("Enter Time: ");
   scanf("%8s", replace->timeStamp);
   printf("Enter present price: ");
