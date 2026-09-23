@@ -1,4 +1,4 @@
-#include "library/datal.h"
+#include "../library/datal.h"
 #include <stdio.h>
 
 void prints()
@@ -53,8 +53,8 @@ int readAndPrintStock(stockMarket *replace)
   
   while(fscanf(outputinfo, "%29s %9s %39s %8s %lf") == 5)
   {
-  printf(inputinfo, "Stock name: %s\nStock symbol: %s\nDate: %s\nTime: %s\nPrice: %.2f\n\n");
+  printf(outputinfo, "Stock name: %s\nStock symbol: %s\nDate: %s\nTime: %s\nPrice: %.2f\n\n");
   }
-  fclose(inputinfo);
+  fclose(outputinfo);
   return 0;
 }

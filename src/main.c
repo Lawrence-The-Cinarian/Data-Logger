@@ -1,4 +1,4 @@
-#include "library/datal.h"
+#include "../library/datal.h"
 #include <stdbool.h>
 #include <stdio.h>
 
@@ -46,7 +46,7 @@ switch(options)
   default:
   puts("Invalid option");
 }
-}
+
 puts("");
 printf("Would you like to continue? Y[es]/N[o]: ");
 scanf(" %c", &symbol);
@@ -54,7 +54,8 @@ if(!(symbol == 'Y' || symbol == 'y'))
 {
   break;
 }
+}
 while(true);
 
+return 0;
 }
-
