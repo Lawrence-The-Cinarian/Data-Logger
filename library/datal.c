@@ -1,4 +1,4 @@
-#include "../library/datal.h"
+#include "library/datal.h"
 #include <stdio.h>
 #include <string.h>
 
