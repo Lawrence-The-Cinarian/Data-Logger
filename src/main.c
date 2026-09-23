@@ -15,6 +15,7 @@ do{
 prints();
 printf("Enter a number from the option: ");
 scanf("%d", &options);
+getchar();
 
 switch(options)
 {
